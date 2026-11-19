@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo Navidad 2026</title>
+<meta name="description" content="Manteles, repasadores, toallas y decoración navideña. Envíos en La Plata, Berisso y alrededores.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Catálogo Navidad 2026">
+<meta property="og:description" content="Manteles, repasadores, toallas y decoración navideña. Envíos en La Plata, Berisso y alrededores.">
+<meta property="og:url" content="https://noelicarusottidev.github.io/Promociones-Catalogo-Navidad-/catalogo/">
+<meta property="og:image" content="https://noelicarusottidev.github.io/Promociones-Catalogo-Navidad-/img/preview-catalogo.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* Layout: a pine-green shelf; the product photos carry the colour, the page stays quiet around them.
+     One column on phones, two from 620px, three from 1000px. Single theme by choice. */
+  :root {
+    color-scheme: dark;
+    --pine: #0f2b22;
+    --pine-raised: #17392e;
+    --pine-line: #2b5244;
+    --snow: #f6f1e4;
+    --snow-dim: #b9c7bd;
+    --gold: #e3b95a;
+    --berry: #c8202f;
+    --font-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+    --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background-color: var(--pine);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='240'%3E%3Cdefs%3E%3Cpath id='f' d='M0-10Q1.5-1.5 10 0Q1.5 1.5 0 10Q-1.5 1.5-10 0Q-1.5-1.5 0-10Z'/%3E%3C/defs%3E%3Cuse href='%23f' transform='translate(35 40) scale(.65)' fill='%23e3b95a' opacity='.7'/%3E%3Cuse href='%23f' transform='translate(155 95) scale(.9)' fill='%23e3b95a' opacity='.45'/%3E%3Cuse href='%23f' transform='translate(70 180) scale(.45)' fill='%23f6f1e4' opacity='.55'/%3E%3Cuse href='%23f' transform='translate(190 210) scale(.55)' fill='%23e3b95a' opacity='.55'/%3E%3Ccircle cx='110' cy='30' r='1.6' fill='%23f6f1e4' opacity='.5'/%3E%3Ccircle cx='20' cy='125' r='1.3' fill='%23f6f1e4' opacity='.45'/%3E%3Ccircle cx='125' cy='160' r='1.8' fill='%23e3b95a' opacity='.5'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse 90% 340px at 50% 0, rgba(227,185,90,.18), transparent);
+    background-size: 220px 240px, 100% 640px;
+    background-repeat: repeat, no-repeat;
+    color: var(--snow);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+
+  .lights {
+    height: 22px;
+    border-top: 2px solid var(--pine-line);
+    background-image:
+      radial-gradient(circle at 12px 8px, #e3b95a 0 5px, rgba(227,185,90,.25) 6px, transparent 9px),
+      radial-gradient(circle at 36px 11px, #e0323f 0 5px, rgba(224,50,63,.25) 6px, transparent 9px),
+      radial-gradient(circle at 60px 8px, #f6f1e4 0 5px, rgba(246,241,228,.25) 6px, transparent 9px),
+      radial-gradient(circle at 84px 11px, #46b877 0 5px, rgba(70,184,119,.25) 6px, transparent 9px);
+    background-size: 96px 22px;
+    background-repeat: repeat-x;
+  }
+  header { padding: 20px 0 8px; }
+  .kicker {
+    margin: 0;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 4px 0 6px;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(42px, 11.5vw, 70px);
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+  h1 em { color: var(--gold); font-style: italic; }
+  .lead { margin: 0; color: var(--snow-dim); max-width: 40ch; font-size: 19px; }
+
+  .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 18px 0 0; color: var(--snow-dim); font-size: 14px; }
+  .btn { display: inline-block; padding: 16px 28px; border-radius: 999px; background: var(--gold); color: var(--pine); font-weight: 700; font-size: 19px; text-decoration: none; }
+  .btn:hover { background: var(--snow); }
+
+  .stock { padding: 7px 16px; border: 1px solid var(--gold); border-radius: 999px; color: var(--gold); font-weight: 700; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+
+  /* Quick index */
+  .index {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    border-top: 1px solid var(--pine-line);
+  }
+  .index a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 11px 2px;
+    border-bottom: 1px solid var(--pine-line);
+    color: var(--snow);
+    text-decoration: none;
+  }
+  .index a:hover .n, .index a:focus-visible .n { text-decoration: underline; text-underline-offset: 3px; }
+  .index .p { color: var(--gold); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  /* Products */
+  main { padding: 28px 0 40px; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: var(--pine-raised);
+    border: 1px solid var(--pine-line);
+    border-radius: 14px;
+    overflow: hidden;
+    scroll-margin-top: 12px;
+  }
+  .photo {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: var(--snow);
+    cursor: zoom-in;
+    position: relative;
+  }
+  .photo img { display: block; width: 100%; max-width: 100%; height: auto; }
+  .photo span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(15, 43, 34, .82);
+    color: var(--snow);
+    font: 500 12px/1.2 var(--font-body);
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 16px 16px;
+    flex: 1;
+  }
+  h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.12;
+    font-size: 29px;
+    text-wrap: balance;
+  }
+  .spec { margin: 0; color: var(--snow-dim); font-size: 15px; }
+  .price {
+    margin: auto 0 0;
+    padding-top: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .price b {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+  }
+  .tag {
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: var(--berry);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  footer {
+    padding: 18px 0 36px;
+    border-top: 1px solid var(--pine-line);
+    color: var(--snow-dim);
+    font-size: 14px;
+  }
+  footer p { margin: 0; font-size: 16px; }
+  footer .order { margin-bottom: 6px; color: var(--snow); font-family: var(--font-display); font-size: 24px; line-height: 1.2; text-wrap: balance; }
+  footer a { color: var(--gold); white-space: nowrap; text-underline-offset: 3px; }
+
+  .want {
+    display: block;
+    align-self: stretch;
+    margin-top: 10px;
+    padding: 12px 16px;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    color: var(--gold);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+  .want { font-size: 21px; padding: 16px 18px; }
+  .want:hover { background: var(--gold); color: var(--pine); }
+
+  body { padding-bottom: 84px; }
+  .float {
+    position: fixed;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    z-index: 5;
+    padding: 14px 24px;
+    border-radius: 999px;
+    background: #25d366;
+    color: #06281a;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .45);
+  }
+  .float { font-size: 19px; padding: 16px 30px; }
+  .float:hover { background: #3fe07d; }
+
+  /* Centered layout */
+  header, footer { text-align: center; }
+  .lead { margin-left: auto; margin-right: auto; }
+  .cta { justify-content: center; }
+  .index { text-align: left; }
+  .info { align-items: center; text-align: center; }
+  .price { justify-content: center; }
+
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+  /* Enlarged photo */
+  dialog {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(6, 18, 14, .94);
+    color: var(--snow);
+  }
+  dialog::backdrop { background: rgba(6, 18, 14, .94); }
+  .viewer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+  }
+  .viewer img {
+    max-width: 100%;
+    max-height: calc(100% - 64px);
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  .close {
+    padding: 10px 22px;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--gold);
+    font: 700 15px/1 var(--font-body);
+    cursor: pointer;
+  }
+  .close:hover { background: var(--gold); color: var(--pine); }
+
+  @media (min-width: 620px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .index { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 32px; }
+  }
+  @media (min-width: 1000px) {
+    .grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    header { padding-top: 44px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lights" aria-hidden="true"></div>
+<header>
+  <div class="wrap">
+    <p class="kicker">✨ Catálogo Navidad 2026 ✨</p>
+    <h1>Todo para vestir tu casa en <em>estas fiestas</em> 🎄</h1>
+    <p class="lead">6 productos con envíos en La Plata, Berisso y alrededores. Aceptamos todos los medios de pago.</p>
+    <p class="cta"><span class="stock">Pedidos hasta agotar stock</span></p>
+
+    <ul class="index">
+      <li><a href="#manteles-redondos"><span class="n">Manteles redondos</span><span class="p">$19.799</span></a></li>
+      <li><a href="#manteles-rectangulares"><span class="n">Manteles rectangulares</span><span class="p">$19.799</span></a></li>
+      <li><a href="#repasadores"><span class="n">Repasadores colgantes</span><span class="p">$5.849</span></a></li>
+      <li><a href="#toallas"><span class="n">Set x3 toallas de visita</span><span class="p">$9.499</span></a></li>
+      <li><a href="#funda-puerta"><span class="n">Funda de puerta</span><span class="p">$16.499</span></a></li>
+      <li><a href="#falda-arbol"><span class="n">Falda para árbol</span><span class="p">$10.899</span></a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap grid">
+
+    <article class="card" id="manteles-redondos">
+      <button class="photo" type="button" data-full="../img/manteles-redondos.jpg">
+        <img src="../img/manteles-redondos.jpg" width="1254" height="1254" alt="Seis modelos de manteles navideños redondos sobre mesas">
+        <span>Ver en grande</span>
+      </button>
+      <div class="info">
+        <h2>Manteles navideños redondos</h2>
+        <p class="spec">Diámetro 180 cm · 6 modelos</p>
+        <p class="price"><b>$19.799</b><span class="tag">Oferta</span></p>
+        <a class="want" href="https://wa.me/5492214405045?text=Hola%21%20Quiero%20encargar%3A%20Manteles%20navide%C3%B1os%20redondos">¡Lo quiero!</a>
+      </div>
+    </article>
+
+    <article class="card" id="manteles-rectangulares">
+      <button class="photo" type="button" data-full="../img/manteles-rectangulares.jpg">
+        <img src="../img/manteles-rectangulares.jpg" width="1254" height="1254" alt="Cuatro modelos de manteles navideños rectangulares">
+        <span>Ver en grande</span>
+      </button>
+      <div class="info">
+        <h2>Manteles navideños rectangulares</h2>
+        <p class="spec">1,40 x 2 metros · Variedad de modelos</p>
+        <p class="price"><b>$19.799</b><span class="tag">Oferta</span></p>
+        <a class="want" href="https://wa.me/5492214405045?text=Hola%21%20Quiero%20encargar%3A%20Manteles%20navide%C3%B1os%20rectangulares">¡Lo quiero!</a>
+      </div>
+    </article>
+
+    <article class="card" id="repasadores">
+      <button class="photo" type="button" data-full="../img/repasadores.jpg">
+        <img src="../img/repasadores.jpg" width="1199" height="1312" alt="Seis repasadores colgantes con formas navideñas: guante, árboles, reno, campanas y muñeco de nieve">
+        <span>Ver en grande</span>
+      </button>
+      <div class="info">
+        <h2>Repasadores navideños colgantes</h2>
+        <p class="spec">Súper suaves · Diseños exclusivos</p>
+        <p class="price"><b>$5.849</b></p>
+        <a class="want" href="https://wa.me/5492214405045?text=Hola%21%20Quiero%20encargar%3A%20Repasadores%20navide%C3%B1os%20colgantes">¡Lo quiero!</a>
+      </div>
+    </article>
+
+    <article class="card" id="toallas">
+      <button class="photo" type="button" data-full="../img/toallas.jpg">
+        <img src="../img/toallas.jpg" width="1254" height="1254" alt="Sets de tres toallas de visita bordadas con motivos navideños, en verde, blanco y rojo">
+        <span>Ver en grande</span>
+      </button>
+      <div class="info">
+        <h2>Set x3 toallas de visita bordadas</h2>
+        <p class="spec">Edición especial navideña · Variedad de modelos</p>
+        <p class="price"><b>$9.499</b></p>
+        <a class="want" href="https://wa.me/5492214405045?text=Hola%21%20Quiero%20encargar%3A%20Set%20x3%20toallas%20de%20visita%20bordadas">¡Lo quiero!</a>
+      </div>
+    </article>
+
+    <article class="card" id="funda-puerta">
+      <button class="photo" type="button" data-full="../img/funda-puerta.jpg">
+        <img src="../img/funda-puerta.jpg" width="1254" height="1254" alt="Funda de puerta navideña con Papá Noel y otros tres diseños">
+        <span>Ver en grande</span>
+      </button>
+      <div class="info">
+        <h2>Funda de puerta navideña</h2>
+        <p class="spec">105 x 200 cm · Tela de fácil colocación · 10 diseños</p>
+        <p class="price"><b>$16.499</b><span class="tag">Promo</span></p>
+        <a class="want" href="https://wa.me/5492214405045?text=Hola%21%20Quiero%20encargar%3A%20Funda%20de%20puerta%20navide%C3%B1a">¡Lo quiero!</a>
+      </div>
+    </article>
+
+    <article class="card" id="falda-arbol">
+      <button class="photo" type="button" data-full="../img/falda-arbol.jpg">
+        <img src="../img/falda-arbol.jpg" width="1199" height="1312" alt="Faldas para árbol de Navidad en cuatro diseños">
+        <span>Ver en grande</span>
+      </button>
+      <div class="info">
+        <h2>Falda para árbol de Navidad</h2>
+        <p class="spec">90 cm · Cubre la base del árbol · 8 diseños</p>
+        <p class="price"><b>$10.899</b><span class="tag">Promo</span></p>
+        <a class="want" href="https://wa.me/5492214405045?text=Hola%21%20Quiero%20encargar%3A%20Falda%20para%20%C3%A1rbol%20de%20Navidad">¡Lo quiero!</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="order">Para encargar, escribime al <a href="https://wa.me/5492214405045">221 440-5045</a></p>
+    <p>🎁 Envíos en La Plata, Berisso y alrededores · Todos los medios de pago</p>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5492214405045">Encargar por WhatsApp</a>
+
+<dialog id="viewer" aria-label="Foto ampliada">
+  <div class="viewer">
+    <img id="viewer-img" src="" alt="">
+    <button class="close" type="button" id="viewer-close">Cerrar</button>
+  </div>
+</dialog>
+
+<script>
+  (function () {
+    var dlg = document.getElementById('viewer');
+    var big = document.getElementById('viewer-img');
+    var closeBtn = document.getElementById('viewer-close');
+    if (!dlg || typeof dlg.showModal !== 'function') return;
+
+    document.querySelectorAll('.photo').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var thumb = btn.querySelector('img');
+        big.src = btn.getAttribute('data-full');
+        big.alt = thumb ? thumb.alt : '';
+        dlg.showModal();
+      });
+    });
+    closeBtn.addEventListener('click', function () { dlg.close(); });
+    dlg.addEventListener('click', function (e) {
+      if (e.target === dlg || e.target.classList.contains('viewer')) dlg.close();
+    });
+  })();
+</script>
+</body>
+</html>

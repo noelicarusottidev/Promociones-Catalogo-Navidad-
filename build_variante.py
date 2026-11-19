@@ -7,7 +7,7 @@ La variante cambia solo el WhatsApp, el texto de envíos y saca el nombre del ne
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-BASE = "https://noelicarusottidev.github.io/Promociones-Catalogo-Navidad-/"
+BASE = "https://navidad.noelicarusotti.page/"
 
 # (texto en index.html, texto en la variante, cantidad esperada de apariciones)
 CAMBIOS = [

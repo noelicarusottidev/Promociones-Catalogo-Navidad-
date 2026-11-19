@@ -17,11 +17,6 @@ CAMBIOS = [
     ('<meta property="og:site_name" content="Blanquería Vanina">\n', "", 1),
     ("✨ Blanquería Vanina · Catálogo Navidad 2026 ✨", "✨ Catálogo Navidad 2026 ✨", 1),
     (
-        "Envío gratis a domicilio en todo La Plata.\">",
-        "Envíos en La Plata, Berisso y alrededores.\">",
-        2,
-    ),
-    (
         "6 productos con envío gratis a domicilio en todo La Plata.",
         "6 productos con envíos en La Plata, Berisso y alrededores.",
         1,
